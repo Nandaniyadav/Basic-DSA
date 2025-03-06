@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Sum of Natural(N) Number
+
+        let checkPrompt = prompt('Kaha tk Add krna h ? ')
+        if (checkPrompt === null) {
+            console.log('Program Cancelled');
+            document.write('Program Cancelled')
+        } else {
+            let num = Number(checkPrompt);
+            console.log(num);
+            if (isNaN(num)) {
+                console.log('Invalid Input');
+                document.write('Invalid Input');
+            } else {
+                if (num > 0) {
+                    let sum = 0;
+                    for (let i = 1; i <= num; i++) {
+                        console.log(i);
+                        sum = sum + i;
+                    }
+                    console.log('sum', sum);
+                    document.write(`Sum of ${num} is : `, sum)
+                } else {
+                    console.log('number should  be Positove and more than zero');
+                    document.write('Number should  be Positove and more than zero');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
