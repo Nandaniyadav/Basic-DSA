@@ -24,12 +24,17 @@
                 document.write('Wrong Input')
             } else {
                 if (prime > 0) {
-                    if (prime % 2 !== 0) {
+                    if (prime == 2) {
                         console.log(`Number is Prime`);
                         document.write(`${prime} is Prime`);
                     } else {
-                        console.log(`Number is not Prome`);
-                        document.write(`${prime} is not Prome`);
+                        if (prime % 2 !== 0) {
+                            console.log(`Number is Prime`);
+                            document.write(`${prime} is Prime`);
+                        } else {
+                            console.log(`Number is not Prome`);
+                            document.write(`${prime} is not Prome`);
+                        }
                     }
 
                 } else {
