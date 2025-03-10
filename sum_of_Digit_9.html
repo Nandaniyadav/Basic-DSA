@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3> Sum of Digit</h3>
+    <script>
+        let checkPrompt = prompt('Enter the number :');
+        if (checkPrompt == null) {
+            console.log('Program Cancelled');
+            document.write('Program Cancelled');
+        } else {
+            let num = Number(checkPrompt);
+            console.log('Number is :', num);
+            document.write('Number is :', num + '</br>');
+            if (isNaN(num)) {
+                console.log('Do correct input in Number');
+                document.write('Do correct input in Number');
+            }
+            else {
+                if (num > 0) {
+                    let sum = 0;
+                    while (num > 0) {
+                        let rem = num % 10
+                        sum = sum + rem;
+                        num = Math.floor(num / 10);
+                    }
+                    console.log('sum', sum);
+                    document.write('Sum of Inter Digits = ', sum);
+                } else {
+                    console.log('Number should be Positive(+) and greater then Zero (0)');
+                    document.write('Number should be Positive(+) and greater then Zero (0)');
+                }
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>
