@@ -10,6 +10,7 @@
 <body>
     <h2>Strong Number</h2>
     <h3>145 = !1 + !4 + !5 </h3>
+    <h5>A Strong Number is a number in which the sum of the factorials of its digits is equal to the number itself.</h5>
     <script>
         // Stong Number
         // 145 = !1 + !4 + !5
@@ -28,6 +29,7 @@
             } else {
                 if (num > 0) {
                     let sum = 0;
+                    let copy = num;
                     while (num > 0) {
                         let rem = num % 10;
                         let fact = 1;
@@ -37,8 +39,14 @@
                         sum = sum + fact;
                         num = Math.floor(num / 10)
                     }
-                    console.log(sum, 'is Strong Number');
-                    document.write(`${sum} is Strong Number`)
+                    if (copy == sum) {
+                        console.log(sum, 'is Strong Number');
+                        document.write(`${sum} is Strong Number`)
+                    } else {
+                        console.log(sum, 'is not Strong Number');
+                        document.write(`${sum} is not Strong Number`)
+                    }
+
                 } else {
                     console.log('Number Should be Positive and greater then 0');
                     document.write('Number Should be Positive and greater then 0')
