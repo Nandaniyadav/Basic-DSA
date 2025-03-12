@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Strong Number</h2>
+    <h3>145 = !1 + !4 + !5 </h3>
+    <script>
+        // Stong Number
+        // 145 = !1 + !4 + !5
+
+        let checkPrompt = prompt('Enter any Number')
+        console.log('checkPrompt', checkPrompt);
+        if (checkPrompt === null) {
+            document.write('Program Cancelled')
+        } else {
+            let num = Number(checkPrompt);
+            console.log('num = ', num);
+            document.write('num = ' + num + '</br>')
+            if (isNaN(num)) {
+                console.log('Wrong Input');
+                document.write('Wrong Input')
+            } else {
+                if (num > 0) {
+                    let sum = 0;
+                    while (num > 0) {
+                        let rem = num % 10;
+                        let fact = 1;
+                        for (let i = 1; i <= rem; i++) {
+                            fact = fact * i
+                        }
+                        sum = sum + fact;
+                        num = Math.floor(num / 10)
+                    }
+                    console.log(sum, 'is Strong Number');
+                    document.write(`${sum} is Strong Number`)
+                } else {
+                    console.log('Number Should be Positive and greater then 0');
+                    document.write('Number Should be Positive and greater then 0')
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
