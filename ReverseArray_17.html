@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Reverse Array</h2>
+    <script>
+        let arr = [10, 40, 70, 20, 30,];
+        console.log('Array is : ', arr);
+        document.write('Array is : ', arr + '<br>');
+        let temp = new Array(arr.length);
+        let j = 0;
+        for (let i = arr.length - 1; i > 0; i--) {
+            temp[j] = arr[i];
+            j++;
+        }
+        console.log('Reverse Array is : ', temp);
+        document.write('Reverse Array is : ', temp + '<br>');
+    </script>
+</body>
+
+</html>
