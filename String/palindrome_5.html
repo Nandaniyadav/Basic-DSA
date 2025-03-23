@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Check String Palindrome or Not</h2>
+    <pre>Forword and backword read same
+    ex. madam = madam
+    </pre>
+    <script>
+        let str = "Nandani";
+        console.log('String is = ', str);
+        document.write('String is = ', str + '<br>');
+        let rev = '';
+        for (let i = str.length - 1; i >= 0; i--) {
+            rev = rev + str.charAt(i);
+        }
+        if (rev == str) {
+            console.log('String is Palindrome');
+            document.write('String is Palindrome' + '<br>');
+        } else {
+            console.log('String is not Palindrome');
+            document.write('String is not Palindrome' + '<br>');
+        }
+    </script>
+</body>
+
+</html>
