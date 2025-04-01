@@ -8,15 +8,19 @@
 </head>
 
 <body>
+    <h2>Left Rotate Array</h2>
     <script>
         let arr = [1, 2, 3, 4, 5]
+        console.log('Array is', arr);
+        document.write('Array is', arr);
         let copy = arr[0];
         console.log('copy', copy);
         for (let i = 0; i < arr.length - 1; i++) {
             arr[i] = arr[i + 1];
         }
         arr[arr.length - 1] = copy;
-        console.log('array is ', arr);
+        console.log('Left Rotate Array is ', arr);
+        document.write('Left Rotate Array is', arr);
 
     </script>
 </body>
