@@ -15,7 +15,10 @@
         console.log('Array is  = ', arr);
         document.write('Array is  = ', arr + '<br/>');
         let k = Number(prompt('Enter K value in digit'));
+        k = k % arr.length;
+        let count = 0;
         for (let j = 0; j < k; j++) {
+            count++
             let copy = arr[0];
             console.log('copy = ', copy);
             for (let i = 0; i < arr.length - 1; i++) {
@@ -24,6 +27,7 @@
             arr[arr.length - 1] = copy
         }
         console.log('Left and Right Rotate by K element = ', arr);
+        document.write('value of k is  = ', count + '<br>');
         document.write('Left and Right Rotate by K element = ', arr);
 
     </script>
