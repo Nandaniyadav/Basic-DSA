@@ -4,11 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title> Insert Element in Array </title>
 </head>
 
 <body>
+    <script>
+        let data = [10, 30, 8, 9, 7, 80, 33, 45, 99];
+        console.log(data)
+        let newElement = 100;
+        let position = 4;
+        for (i = data.length - 1; i >= 0; i--) {
+            if (i >= position) {
+                data[i + 1] = data[i]
+                if (i == position) {
+                    data[i] = newElement;
+                }
+            }
+        }
+        console.log(data)
 
+    </script>
 </body>
 
 </html>
