@@ -9,14 +9,23 @@
 
 <body>
     <script>
-        let data = [2, 5, 7, 9, 34, 67, 89,99];
+        let data = [2, 5, 7, 9, 34, 67, 89, 99];
         // for (i = 0; i < data.length; i++) {
         //     document.write(`Data index ${i} =  ${data[i]} <br>`)
         // }
-        let x = 5;
-        document.write(`Print 4th index = ${data[x]}`);
+        // let x = 5;
+        // document.write(`Print 4th index = ${data[x]}`);
+        getElement = () => {
+            let el = document.getElementById('myelement').value
+            if (el < data.length && typeof parseInt(el) === 'number') {
+                alert(data[el])
+            } else {
+                alert('Please enter valid index number')
+            }
+        }
     </script>
-
+    <input type="text" id="myelement">
+    <button onclick="getElement()">Get Element</button>
 </body>
 
 </html>
