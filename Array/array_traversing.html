@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Traversing</title>
+</head>
+
+<body>
+    <h3>Array Traversing</h3>
+    <script>
+        let data = [2, 5, 7, 9, 34, 67, 89, 99];
+        // for (i = 0; i < data.length; i++) {
+        //     document.write(`Data index ${i} =  ${data[i]} <br>`)
+        // }
+        // let x = 5;
+        // document.write(`Print 4th index = ${data[x]}`);
+        getElement = () => {
+            let el = document.getElementById('myelement').value
+            if (el < data.length && typeof parseInt(el) === 'number') {
+                alert(data[el])
+            } else {
+                alert('Please enter valid index number')
+            }
+        }
+    </script>
+    <input type="text" id="myelement">
+    <button onclick="getElement()">Get Element</button>
+</body>
+
+</html>
