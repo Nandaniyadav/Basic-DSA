@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Element in Array</title>
+</head>
+
+<body>
+    <h3>Search Element in Array</h3>
+    <script>
+        let data = [1, 4, 7, 12, 67, 90, 45, 2, 89];
+        let item = 12;
+        let index = undefined;
+        console.log('data = ', data);
+        document.write(`data = ${data}<br>`);
+        document.write(`Item = ${item}<br>`)
+        for (i = 0; i < data.length; i++) {
+            console.log(data[i])
+            if (data[i] == item) {
+                index = i;
+            }
+        }
+        console.log('index = ', index)
+        document.write('index = ', index)
+    </script>
+</body>
+
+</html>
